@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="./css/home.css">
+        <link rel="stylesheet" href="./css/checkout.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <ul class="fixed size tamanhonav navbar">
+                    <div class="pp">
+                        <li><a class="active" href="./home.html">Sobre Nós</a></li>
+                        <li><a class="active" href="./home.html">Contato</a></li>
+                        <li><a class="active" href="./home.html">Discos</a></li>
+                        <li><a class="active" href="./login.html">Login</a></li>
+                    </div>
+                    <div class="um navbarimg"><a class="disco" href="./home.html"><img src="./images/disco.png" alt=""></a></div>
+                    <div class="pr navbarimg icon-cart" style="position: relative; float: right;">
+                        <img class="pv carrinho" src="./images/carrinho.png" alt="">
+                        <span>0</span>
+                    </div>
+                </ul>
+            </div> 
+        </header>
+
+        <div class="cartTab">
+            <h1 style="font-size: 22px;">Carrinho de Compras</h1>
+            <div class="listCart"></div>
+            <div class="btn">
+                <button class="close">Fechar</button>
+                <button class="checkOut"><a href="checkout.html">Finalizar a compra</a></button>
+            </div>
+        </div>
+
+        <main class="checkout__main">
+            <hr class="checkout__linha-main">
+            
+            <ul class="checkout__lista">
+
+            </ul>
+
+            <section class="checkout__compra">
+                <h2 id="preco_total"></h2>
+                <button class="checkout__compra-button">COMPRAR</button> 
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <p class="footer__newsletter amarelo">SE INSCREVA EM NOSSA NEWSLETTER</p>
+            <div class="footer__inscricao">
+                <input type="text" name="email" placeholder="EMAIL">
+                <button class="footer__inscricao__inscrever">SE INSCREVER</button>
+            </div>
+        </footer>
+
+        <script src="./js/app.js"></script>
+        <script src="./js/checkout.js"></script>
+
+    </body>
+</html>
